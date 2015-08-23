@@ -1,0 +1,25 @@
+This codebook explains each variable and file used in the R script run_analysis.R
+
+x_train.txt : 	The file downloaded and unzipped from the original database, and placed at the working directory.
+				I refers, as per the original Readme.txt file, to measurements from weareble devices for an experimental study.
+				Subjects trained while recording.
+
+x_test.txt :	The file downloaded and unzipped from the original database, and placed at the working directory.
+				I refers, as per the original Readme.txt file, to measurements from weareble devices for an experimental study.
+				Subjects didnt train while recording.
+
+f1 :			First variables created by the script to asign the measurments files from the data set.
+				This one, for training group of subjects.
+
+f2 :			First variables created by the script to asign the measurments files from the data set.
+				This one, for test (not training) group of subjects.
+
+Mfile :			Merged file (variable), out of f1 and f2. 
+
+Means :			Matrix for storing the means of every column at Mfile.
+
+StDevs :		Matrix for storing the standard deviation of every column at Mfile.
+
+MSDs :			Variable that combines the columns created for the means and standard deviations.
+
+MSDs.txt :		File written as txt, from the MSDs variable. Resulting output to upload at github.
